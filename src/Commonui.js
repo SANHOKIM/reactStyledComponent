@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import "@fontsource/noto-sans-kr";
 import arrowbtnimg from "./icon/arrowbtnimg.svg";
-
 // 타이틀
 export const TitleCommon = styled.h2`
   font-family: "Noto Sans KR";
@@ -10,7 +9,6 @@ export const TitleCommon = styled.h2`
   text-align: center;
 `;
 // 폼
-
 export const InputUi = (props) => {
   return (
     <div className={props.className && props.className}>
@@ -22,34 +20,30 @@ export const InputUi = (props) => {
         />
         <label htmlFor="">
           {props.inputinfo.labeltext}
-          <i></i>
+          <i>와아!</i>
         </label>
       </div>
       <span>{props.inputinfo.alerttext}</span>
     </div>
   );
 };
-
-// 버튼
-
+// 버튼 : ButtonUi 와 Hrefbtn , 그리고 Abtn버튼은
 export const ButtonUi = styled.button`
   width: 250px;
   line-height: 3rem;
   font-size: 1.5rem;
-  border: 1px solid #000;
+  border: 3px solid #000;
   background-color: white;
 `;
-
-export const Hrefbtn = styled.a`
+export const HrefBtn = styled.a`
   display: inline-block;
   width: 250px;
   line-height: 3.1rem;
   font-size: 1.5rem;
-  border: 1px solid #000;
+  border: 1px dashed #000;
   text-decoration: none;
   color: black;
 `;
-
 export const Abtn = (props) => {
   return (
     <a
@@ -63,7 +57,5 @@ export const Abtn = (props) => {
     </a>
   );
 };
-
 // 목록
-
 // 갤러리
